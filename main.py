@@ -1,5 +1,5 @@
-from loguru import logger
 import sys
+from loguru import logger
 
 logger.remove()
 logger.add(sys.stdout, level="INFO")
@@ -17,4 +17,3 @@ if __name__ == '__main__':
   va = VoiceAssistant()
   va.run()
   logger.info("VoiceAssistant gestartet")
-
