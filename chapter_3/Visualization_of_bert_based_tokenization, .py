@@ -1,3 +1,6 @@
+
+## Does not work in python 3.12. No new version of bertviz available yet.
+
 from transformers import AutoTokenizer, AutoModel, utils
 from bertviz import head_view
 
