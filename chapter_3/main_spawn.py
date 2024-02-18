@@ -21,6 +21,7 @@ class VoiceAssistant():
     print(type(voices[9]))
     print(voices[9].id)
 
+    m = 0
     for n, voice in enumerate(voices):
       if voice.id == "german":
         print(n, voice.id)
