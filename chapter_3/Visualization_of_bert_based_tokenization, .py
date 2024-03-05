@@ -1,4 +1,3 @@
-
 ## Does not work in python 3.12. No new version of bertviz available yet.
 
 from transformers import AutoTokenizer, AutoModel, utils
@@ -10,7 +9,7 @@ model_name = "bert-base-german-cased"
 input_text = "Der Hund mag seinen Knochen."
 model = AutoModel.from_pretrained(model_name, output_attentions=True)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-inputs = tokenizer.encode(input_text, return_tensors='pt', add_special_tokens=True)
+inputs = tokenizer.encode(input_text, return_tensors="pt", add_special_tokens=True)
 outputs = model(inputs)
 attention = outputs[-1]
 tokens = tokenizer.convert_ids_to_tokens(inputs[0])
