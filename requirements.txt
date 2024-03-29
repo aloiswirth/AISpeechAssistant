@@ -1,0 +1,14 @@
+matplotlib
+librosa
+scipy
+numpy
+scipy
+tk
+torch
+transformers
+nltk
+spacy
+loguru
+pyttsx3
+pvporcupine
+# pyaudio

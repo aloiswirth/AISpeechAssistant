@@ -1,13 +1,17 @@
+import matplotlib
+matplotlib.use('TkAgg')
 import librosa
 import librosa.display
 import scipy
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy import signal
+import matplotlib
+
 
 if __name__ == "__main__":
     # Load the audio file
-    samples, sample_rate = librosa.load("test.wav")
+    samples, sample_rate = librosa.load("./chapter_4/test.wav")
     print(f"# samples: {str(len(samples))}, sample rate: {str(sample_rate)}")
     # Berechnen der Audiolänge
     duration = len(samples) / sample_rate
@@ -38,4 +42,5 @@ if __name__ == "__main__":
     plt.title("Spektrogramm")
     plt.ylabel("Frequenz (Hz)")
     plt.xlabel("Zeit (s)")
+
     plt.show()
